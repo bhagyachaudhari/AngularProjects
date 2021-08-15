@@ -1,0 +1,26 @@
+
+<div>
+    <h4>ngFor Example</h4>
+    <ul>
+        <li *ngFor="let city of cities">{{city}}</li>
+    </ul>
+</div>
+
+<div>
+    <h4>ngFor with object</h4>
+
+    <div>
+        <table border=1>
+            <tr>
+                <th>Emp ID</th>
+                <th>Name</th>
+                <th>Salary</th>
+            </tr>
+            <tr *ngFor="let emp of employees">
+                <td>{{emp.empId}}</td>
+                <td>{{emp.empName}}</td>
+                <td>{{emp.salary}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

@@ -1,3 +1,12 @@
 <h1>Hi, I am from app-component</h1>
+<h5>{{msg}}</h5>
 <app-greet></app-greet>
 <app-wish></app-wish>
+
+<h4>** Two Way Databinding Example **</h4>
+Name: {{firstName}} <br>
+Age: {{age}} <br>
+
+Name : <input type="text" [(ngModel)] = "firstName"/><br>
+Age : <input type="text" [(ngModel)] = "age"/><br>
+<input type="button" value="SUBMIT" (click)="handleSubmitBtn()"/>

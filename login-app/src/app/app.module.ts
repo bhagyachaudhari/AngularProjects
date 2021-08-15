@@ -3,17 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { GreetComponent } from './greet/greet.component';
-import { WishComponent } from './wish/wish.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    GreetComponent,
-    WishComponent
+    AppComponent
   ],
   imports: [
-    BrowserModule, FormsModule
+    BrowserModule,FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

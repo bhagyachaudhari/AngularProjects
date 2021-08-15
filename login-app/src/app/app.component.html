@@ -1,0 +1,12 @@
+<div>
+  <form>
+    <h4>Login Here</h4>
+    
+    <input type="text" name="userName" [(ngModel)]="userName"/><br>
+    <input type="password" name="password" [(ngModel)]="password"/><br>
+
+    <input type="submit" value="LOGIN" (click)="checkLogin()"/>
+    <br><br>
+    {{msg}}
+  </form>
+</div>
