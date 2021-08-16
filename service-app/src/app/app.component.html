@@ -1,2 +1,17 @@
 <h2>{{welcomeMsg}}</h2><br>
 <input type="submit" name="Click Me" (click)="getMessage()"/>
+
+
+<br><br><br>
+<div>
+    <h1>Simple Form in Angular</h1>
+<form #SimpleForm="ngForm" (ngSubmit)="getValues(SimpleForm.value)">
+    <input type="text" ngModel name="user" placeholder="Enter the Name"/>
+    <br><br>
+    <input type="text" ngModel name="age" placeholder="Enter the Age"/>
+    <br><br>
+    <input type="text" ngModel name="address" placeholder="Enter the Address"/>
+    <br><br>
+    <button>Get User Values</button>
+</form>
+</div>

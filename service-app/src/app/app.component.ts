@@ -14,4 +14,9 @@ export class AppComponent {
   getMessage(){
     this.welcomeMsg = this.welcomeService.getWelcomeMessage();
   }
+
+  getValues(val:any){
+
+    console.warn(val);
+  }
 }
