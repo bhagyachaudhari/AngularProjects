@@ -10,8 +10,28 @@ export class AppComponent {
   color:string="orange";
   err=true;
 
+  //data:string = "Raj";
+
+  dataObj = [{
+    name:'bhagyac',
+    age:29,
+    email:'bhagyac@gmail.com'
+  },{
+    name:'raj',
+    age:32,
+    email:'raj@gmail.com'
+  },{
+    name:'kk',
+    age:29,
+    email:'kk@gmail.com'
+  }]
+  
   updateColor(){
     //this.color = "blue";
     this.err=!this.err;
+  }
+
+  parentFunction(data:any){
+    console.warn(data);
   }
 }

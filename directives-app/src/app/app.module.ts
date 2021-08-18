@@ -7,6 +7,7 @@ import { ClassComponent } from './class/class.component';
 import { IfelseComponent } from './ifelse/ifelse.component';
 import { SwitchComponent } from './switch/switch.component';
 import { ForComponent } from './for/for.component';
+import { CustomStyleDirective } from './custom-style.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ForComponent } from './for/for.component';
     ClassComponent,
     IfelseComponent,
     SwitchComponent,
-    ForComponent
+    ForComponent,
+    CustomStyleDirective
   ],
   imports: [
     BrowserModule

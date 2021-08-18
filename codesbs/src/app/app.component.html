@@ -8,4 +8,25 @@
 <button (click)="updateColor()"> Update Color</button>
 
 <h2 [style.color]="err?'red':'green'">Conditional Style 2</h2>
+
+<br>
+<p>
+<ngb-alert [dismissible]="false">
+    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+</ngb-alert>
+</p>
+<br><br><br><br><br>
+<div>Angular Material</div>
+<button mat-button color="accent">Angular Mat Button</button>
+<mat-slider max="10"    min="1"></mat-slider>
 <app-footer></app-footer>
+<br>
+<!--<app-user [hero]="data"></app-user>-->
+
+<!-- <div *ngFor="let d of dataObj">
+    <app-user [heroObj]="d"></app-user>
+</div> -->
+
+
+<app-user (parentFunction)="parentFunction($event)"></app-user>
+<app-pipetest></app-pipetest>
